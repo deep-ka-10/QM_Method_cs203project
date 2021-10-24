@@ -1,0 +1,13 @@
+project idea 2
+
+a) title:
+online dice
+
+b) objective:
+to design random number generator that generates a random number from 1 to 6 which can work as dices in many online games such as ludo, snake and ladder.
+
+c)it would be implemented as RTL.
+
+d)functionality:
+
+random number generator generates a number that taken from limited distribution and outputs it.
