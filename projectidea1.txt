@@ -1,0 +1,24 @@
+project idea 1
+
+a) title: 
+minimization of Boolean expression.
+
+b) objective:
+as logic circuits/gates are the basic building block of any hardware appliances hence its benificial to
+know the optimized form of logic circuit which reduces the logic gates.
+hence our objective is to reduce cost,complexity of the circuit and enhance the simulation efficiency by simplifying the algebraic
+expression of a Boolean function.
+
+c)it would be implemented as software application using c language.
+
+d)functionality:
+
+Logic minimization or optimization means replacing one group of gates with another that 
+will perform the same task faster or use less real estate on the silicon.
+
+we will try to make an software application that can take Boolean equations with any number of variable and optimize it for 2-level gates solution.
+This can be implemented using the concept of Quine-McCluskey Method in c language.
+QM Method is a tabular method that uses logical procedure that can be automated.
+we implement this by taking the boolean expression as input from the user as sum of minterms and process them in stages to find 
+prime implicants,essential prime implicants and finally the minimum number of prime implicants required to cover all the minterm 
+and gives optimised boolean expression as an output.
