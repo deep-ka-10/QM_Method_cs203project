@@ -1,0 +1,70 @@
+
+//code is in progress
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void DecimalToBinary(){
+
+ int Minterm_Binary;
+ Minterm_Binary=(int **)malloc(nallminterm*sizeof(int*));
+ for(i=0;i<=nallminterm;i++){
+ Minterm_Binary[i]=(int *)malloc((nvariable+4)*sizeof(int));
+
+ }
+ 
+}
+
+int main()
+{
+int i,nvariable,nallminterm,nDontCare,*MintermIndicesDecimal,*DontCareDecimal;
+
+ printf("How many variables does the boolean function contain\n");
+ scanf("%d",&nvariable);
+
+ while(nvariable<=0){
+ 
+ printf("The number of variables should be greater than 0, please enter again:\n\n");
+ printf("enterd number of varible are negetive, re-enter How many variables does the boolean function contain\n");
+ scanf("%d",&nvariable);
+ }
+
+ printf("How many total minterms including Don't-Care minterms does the boolean function contain\n");
+ scanf("%d",&nallminterm);
+ 
+ while(nallminterm>pow(2,nvariable) || nallminterm<=0)
+ {
+ printf("The number of minterms cannot be greater than 2^%d nor smaller than 1, please enter again:\n",NumberOfVariable);
+ printf("How many total minterms including Don't-Care minterms does the boolean function contain\n");
+ scanf("%d",&nallminterm);
+ }
+ 
+ printf("How many Don't-Care minterms does the boolean function contain\n");
+ scanf("%d",&nDontCare);
+
+ while(nDontCare>=nallminterm ||nDontCare<0)
+ {
+ printf("The number of Don't-Care minterms cannot be greater than the number of all minterms nor smaller than 0, please enter again:\n");
+ printf("How many Don't-Care minterms does the boolean function contain\n");
+ scanf("%d",&nDontCare);
+ }
+
+ MintermIndicesDecimal=(int *)malloc(NumberOfAllMinterm*sizeof(int));
+
+ DontCareDecimal=(int *)malloc(NumberOfDontCare*sizeof(int));
+
+ for(i=0;i<nallminterm;i++){
+
+ printf("Please enter the decimal index of the %d th minterm in ascending order:",i+1);
+ scanf("%d",&MintermIndicesDecimal[i]);
+ }
+
+ for(i=0;i<nDontCare;i++){
+
+ printf("Please enter the decimal index of the %d th Don't Care minterm in ascending order:",i+1);
+ scanf("%d",&DontCareDecimal[i]);
+ }
+
+ 
+ DecimalToBinary();
+}
