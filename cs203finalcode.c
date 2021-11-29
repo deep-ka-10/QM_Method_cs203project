@@ -388,6 +388,7 @@ int main()
         EPI_Index[nEPI++]=ReducedPIChart_Y[Potential_EPI[MinimumNo][i]];
         
         printf("\n\nThe minimised boolean expression is: ");
+        
         f(x,0,nEPI)
         {
             f(y,0,nvariable)
@@ -403,16 +404,23 @@ int main()
     else
     {
         printf("\n\nThe minimised boolean expression is: ");
+        
         f(x,0,nEPI)
-        f(y,0,nvariable)
-        if(z==1) printf("%c",65+y);
-        else if(z==0) printf("%c'",65+y);
-        if(x<nEPI-1) printf("+"); 
+        {
+            f(y,0,nvariable)
+            {
+                z=Column[EPI_Index[x][0]][EPI_Index[x][1]][EPI_Index[x][2]][y];
+                if(z==1) printf("%c",65+y);
+                else if(z==0) printf("%c'",65+y);   
+            }
+            if(x<nEPI-1) printf("+");
+        }
         return 0;
         
     }
     
 }
+
 
 
 
