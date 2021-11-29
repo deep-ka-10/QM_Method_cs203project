@@ -10,6 +10,7 @@ task that are completed:
 - Clear functionality and scoping
 - Team should have started coding. )
 3.implentation qm method in c language.
+4.report
 
 task that are pending:
-1.report
+
