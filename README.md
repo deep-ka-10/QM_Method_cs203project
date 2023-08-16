@@ -1,6 +1,6 @@
-# 1. definition of input and outputs
+# 1. Definition of input and outputs
 
-# input
+# Input
 
 1. user should enter the Number of variables, the number of minterms(including the number of don't care minterms), and then the number of don't care.
 2. The number of minterms cannot be greater than 2^number of variables nor smaller than 1.
@@ -12,7 +12,7 @@
 8. user should enter the minterm indices as decimal numbers in ascending order (DontCareDecimal[i]).
 9. each DontCare minterm indices value entered should be smaller than 2^number of variables.
 
-# output
+# Output
 
 1. we will get the optimized boolean expression of the given function.
 2. the output expression will be minimized expression with characters like a, a,b,b',...
